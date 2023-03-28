@@ -1,0 +1,12 @@
+package proyecto1;
+
+public abstract class Astro {
+	
+	private long radio;
+	private long rotacion;
+	private long masa;
+	private int temperatura;
+	private float gravedad;
+
+	public abstract void muestra();
+}

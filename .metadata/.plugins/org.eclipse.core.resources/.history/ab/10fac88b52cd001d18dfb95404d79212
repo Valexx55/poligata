@@ -1,0 +1,11 @@
+package proyecto1;
+
+public class Planeta extends Astro{
+
+	@Override
+	public void muestra() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

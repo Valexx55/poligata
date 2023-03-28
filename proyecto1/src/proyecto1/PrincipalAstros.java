@@ -1,0 +1,39 @@
+package proyecto1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrincipalAstros {
+	
+	public static void main(String[] args) {
+		 List<Astro> lista_astros = new ArrayList<Astro>();
+		 
+		 
+		 Satelite satelite_luna = new Satelite("Luna", 3l, 10l, 30l, 20, 9.8f, 300, 200, null);
+		 Planeta planeta_tierra = new Planeta("Tierra", 3l, 4l, 5l, 30, 9.8f, 3000l, 50000l, true, List.of(satelite_luna));
+		 satelite_luna.setPlaneta(planeta_tierra);
+		 
+		 lista_astros.add(planeta_tierra);
+		 lista_astros.add(satelite_luna);
+		 
+		 //lista_astros = List.of (planeta_tierra, satelite_luna);
+		 
+		 //MOSTRAR EL MENÚ
+		 Astro astro_aux = null;
+		 for (int i = 0; i<lista_astros.size(); i++)
+		 {
+			 astro_aux = lista_astros.get(i);
+			 System.out.println(i + " " + astro_aux.getNombre());
+		 }
+		 //TODO: LEER LA OPCIÓN SELECCIONADA POR EL USUARIO Y MOSTRAR LA INFO DE ESE ASTRO;
+		 
+		 //MOSTRAR TODOS LOS ASTROS
+		 for (Astro a: lista_astros)
+		 {
+			 a.muestra();
+		 }
+		 
+		 
+	}
+
+}

@@ -1,0 +1,6 @@
+package proyecto1;
+
+public abstract class Astro {
+
+	public abstract void muestra();
+}

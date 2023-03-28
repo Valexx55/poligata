@@ -1,0 +1,19 @@
+package proyecto1;
+
+import java.util.List;
+
+public class Planeta extends Astro{
+	
+	private long distancia_sol;
+	private long orbita_sol;
+	private boolean tiene_satelites;
+	
+	private List<Satelite> lista_satelites;
+
+	@Override
+	public void muestra() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

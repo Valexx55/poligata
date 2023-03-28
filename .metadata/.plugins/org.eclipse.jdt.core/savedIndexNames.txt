@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\valer\Documents\CAS\WEB SERVICIES CON J2EE IFCD07\repoprofe\.metadata\.plugins\org.eclipse.jdt.core
+3501714628.index
+2544184451.index
+1865797976.index

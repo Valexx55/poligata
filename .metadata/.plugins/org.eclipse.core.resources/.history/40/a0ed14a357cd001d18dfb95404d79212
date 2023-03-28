@@ -1,0 +1,53 @@
+package proyecto1;
+
+
+public class Satelite extends Astro{
+	
+	private long distancia_planeta;
+	private long orbita_planeta;
+		
+	private Planeta planeta;
+
+	@Override
+	public void muestra() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public long getDistancia_planeta() {
+		return distancia_planeta;
+	}
+
+	public void setDistancia_planeta(long distancia_planeta) {
+		this.distancia_planeta = distancia_planeta;
+	}
+
+	public long getOrbita_planeta() {
+		return orbita_planeta;
+	}
+
+	public void setOrbita_planeta(long orbita_planeta) {
+		this.orbita_planeta = orbita_planeta;
+	}
+
+	public Planeta getPlaneta() {
+		return planeta;
+	}
+
+	public void setPlaneta(Planeta planeta) {
+		this.planeta = planeta;
+	}
+
+	public Satelite(String nombre, long radio, long rotacion, long masa, int temperatura, float gravedad, long distancia_planeta,
+			long orbita_planeta, Planeta planeta) {
+		super(nombre, radio, rotacion, masa, temperatura, gravedad);
+		this.distancia_planeta = distancia_planeta;
+		this.orbita_planeta = orbita_planeta;
+		this.planeta = planeta;
+	}
+	
+	public Satelite() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
